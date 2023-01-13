@@ -6,19 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banana speak</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>banana talks</h1>
+    <nav class="navigation">
+        <h1><img class="navigation--image--resize" src="minion.png" alt="minion hanging image">banana talks</h1>
+    </nav>
+    <main>
+        <textarea id="txt-area" placeholder="please enter the text to be translated to banana language"></textarea>
 
-    <textarea id="txt-area" placeholder="please enter the text to be translated to banana language"></textarea>
+        <button id="btn-translate">Translate to Banana</button>
 
-    <button id="btn-translate">Translate to Banana</button>
-
-    <div>Translation will come here 👇🏻</div>
-    <div id="output"></div>
-
-
+        <div class="output">Translation will come here 👇🏻</div>
+        <div id="output"></div>
+    </main>
+    <footer class="footer">
+        <div class="footer__about">about</div>
+        <p class="footer__p">Do you know about minions and the language they speak - minion language or banana language.
+            Yes it's a real
+            language not gibberish, type your own text above and traslate to banana language.</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 
